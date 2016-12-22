@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<title>MonkeyTrouble</title>
+ 	  	<meta charset="utf-8">
+ 	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	  	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+ 	</head>
+ 	 <body>
+ 		<!--Here Starts Form-->
+ 		<section class="contact section-fullscreen flex-vertical-center">	
+			<div class="container">
+				<br>
+				<div class="form section-md">
+					<div class="col-md-offset-4 cold-md-8">
+						<h2 class="">MonkeyTrouble</h2>
+						<p class="">Completa el formulario para saber si estas en problemas</p>
+					</div><br><br>
+					<form action="" class="">
+						<div class="form-group">
+							<label for="day" class="control-label col-md-offset-1 col-md-3">Monos</label>
+							<div class="col-md-5">
+								<form action="action_page.php" name="formulario" method="get">
+								  <input type="checkbox" name="monkey" id=monkey> MonkeyA
+								  <input type="checkbox" name="monkey" id=monkey> MonkeyA
+								  <br><br>
+								</form>
+							</div>	
+						</div>
+						<div class="form-group">
+							<label class="control-label col-md-offset-1 col-md-3" for="vacation">¿Esta Sonriendo?</label>
+							<div class="col-md-5">
+								<form action="action_page.php">
+								  <select name="sonreir" id="sonreir">
+								    <option value="1">Si</option>
+								    <option value="2">No</option>
+								  </select>
+								  <br><br>
+								</form>	
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-md-offset-4 col-md-4">
+								<button onclick="calcular()" class="btn btn-default">Consultar</button>
+							</div>
+						</div>	
+						<div class="col-md-offset-4 col-md-4">
+							<h4 class="text-info">Mensaje:</h4>
+							<div id="salida" style="font-size:50px;">-</div>
+							
+						</div>				
+					</form>
+				
+				</div>
+			</div>		
+		</section>
+
+		<script type="text/javascript" src="main.js"></script>
+  	</body>
+</html>
+
